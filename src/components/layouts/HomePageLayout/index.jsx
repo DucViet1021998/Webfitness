@@ -7,6 +7,7 @@ import SideBar from '../DefaultLayout/Sidebar/SideBarIndex';
 import Programs from '../../../pages/home/Programs/Programs';
 import Reason from '../../../pages/home/Reason';
 import Plan from '../../../pages/home/Plan';
+import Testimonials from '../../../pages/home/Testimonaials';
 
 
 const cx = classNames.bind(styles)
@@ -30,6 +31,7 @@ function HomePageLayout({ children }) {
             <Programs className={cx('programs')} />
             <Reason />
             <Plan />
+            <Testimonials   />
         </>
     )
 }
