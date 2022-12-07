@@ -1,7 +1,7 @@
 import Home from "../pages/home/indexHome"
 import SignIn from "../pages/signIn/indexSignIn"
 import HomeLoggedIn from "../pages/homeLoggedIn/indexHomeLoggedIn"
-import Schedule from "../pages/Schedule/Schedule"
+import Schedule from "../pages/Schedule"
 import Register from "../pages/Register"
 import HomePageLayout from "../components/layouts/HomePageLayout"
 

@@ -1,10 +1,12 @@
 import React from 'react';
 import classNames from 'classnames/bind';
+import styles from './HomePageLayout.module.scss';
 
 import Header from '../HeaderComponent/indexHeader';
-import styles from './HomePageLayout.module.scss';
 import SideBar from '../DefaultLayout/Sidebar/SideBarIndex';
 import Programs from '../../../pages/home/Programs/Programs';
+import Reason from '../../../pages/home/Reason';
+import Plan from '../../../pages/home/Plan';
 
 
 const cx = classNames.bind(styles)
@@ -26,6 +28,8 @@ function HomePageLayout({ children }) {
 
             </div>
             <Programs className={cx('programs')} />
+            <Reason />
+            <Plan />
         </>
     )
 }
