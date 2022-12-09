@@ -3,7 +3,7 @@ import classNames from 'classnames/bind';
 import styles from './Testimonials.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
-
+import { motion } from 'framer-motion'
 const data = [
     {
         img: 'https://fitclub-1my.pages.dev/static/media/t-image3.3894413f7bf2b4f1fc54.jpg',
@@ -29,6 +29,7 @@ const data = [
 
 const cx = classNames.bind(styles)
 function Testimonials() {
+    const transition = { type: 'spring', duration: 3 }
     const [selected, setSelected] = useState(0)
     const tLength = data.length
     return (
@@ -48,8 +49,18 @@ function Testimonials() {
                 </span>
             </div>
             <div className={cx('right')}>
-                <div></div>
-                <div></div>
+                <motion.div
+                    initial={{ opacity: 0, x: -100 }}
+                    transition={{ ...transition, duration: 2 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                >
+                </motion.div>
+                <motion.div
+                    initial={{ opacity: 0, x: 100 }}
+                    transition={{ ...transition, duration: 2 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                >
+                </motion.div>
                 <img src={data[selected].img} alt="anh" />
                 <div className={cx("arrows")}>
                     <FontAwesomeIcon onClick={() => {
@@ -66,7 +77,7 @@ function Testimonials() {
                     }} icon={faArrowRight} />
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 
