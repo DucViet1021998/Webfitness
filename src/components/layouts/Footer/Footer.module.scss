@@ -1,0 +1,48 @@
+.container {
+    width: 100%;
+    background-color: var(--gray);
+    height: 40vh;
+    z-index: 0;
+}
+
+.container>hr {
+    border: 1px solid var(--green);
+}
+
+.footer {
+
+    display: flex;
+
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+
+.icons {
+    cursor: pointer;
+    display: flex;
+    gap: 4rem;
+    font-size: 4rem;
+    color: var(--white);
+    margin-top: 4rem;
+}
+
+.logo>img {
+    width: 10rem;
+
+}
+
+.blur {
+    position: absolute;
+    z-index: 1;
+    width: 10rem;
+    height: 15rem;
+    border-radius: 50%;
+    filter: blur(212px);
+    background-color: var(--green);
+    left: 45rem;
+    top: 2rem;
+}

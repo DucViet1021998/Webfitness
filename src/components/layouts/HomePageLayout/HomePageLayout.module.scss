@@ -46,3 +46,8 @@
     background-color: var(--green);
     z-index: -1;
 }
+
+.logo>img {
+    object-fit: cover;
+    border: 1px solid red;
+}

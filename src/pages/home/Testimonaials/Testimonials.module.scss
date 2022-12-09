@@ -3,7 +3,7 @@
     gap: 1rem;
     padding: 0 2rem;
     background-color: var(--gray);
-    height: 80vh;
+    height: 70vh;
     user-select: none;
 }
 
@@ -75,10 +75,10 @@
 
 .arrows {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     position: absolute;
-    bottom: 9rem;
-    right: 13rem;
+    bottom: 5.5rem;
+    right: 12rem;
     color: var(--white);
     font-size: 3rem;
     cursor: pointer;

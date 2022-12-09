@@ -1,7 +1,6 @@
 .container {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    position: relative;
     background-color: transparent;
     height: 60px;
     margin-top: 30px;
@@ -9,6 +8,8 @@
 }
 
 .logo {
+    position: absolute;
+    top: 0.6rem;
     display: flex;
     flex-direction: column;
     font-family: 'Bungee Inline';
@@ -20,6 +21,8 @@
 }
 
 .narBar {
+    position: absolute;
+    right: 3rem;
     display: flex;
     list-style: none;
     font-weight: 600;
