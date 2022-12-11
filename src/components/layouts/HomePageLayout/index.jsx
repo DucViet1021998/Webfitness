@@ -9,6 +9,7 @@ import Reason from '../../../pages/home/Reason';
 import Plan from '../../../pages/home/Plan';
 import Testimonials from '../../../pages/home/Testimonaials';
 import Footer from '../Footer';
+import Products from '../../../pages/home/Productcs';
 
 
 const cx = classNames.bind(styles)
@@ -32,6 +33,7 @@ function HomePageLayout({ children }) {
             <Programs className={cx('programs')} />
             <Reason />
             <Plan />
+            <Products />
             <Testimonials />
             <Footer />
         </>

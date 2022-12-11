@@ -39,10 +39,11 @@ a[href] {
     text-decoration: none;
 }
 
+// Homepage Running Man
 img[src*="5ff15176379aaba68d10afdcb236"] {
     position: absolute;
     z-index: 5;
-    right: -20vw;
+    left: calc(85% + 0.2rem);
     top: -5vh;
     filter: drop-shadow(0 1.2rem 0.75rem #333);
 

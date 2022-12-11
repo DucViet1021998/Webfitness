@@ -1,33 +1,27 @@
 import React from 'react'
 import styled from "styled-components";
 import Slider from "react-slick";
-import ProductData from '../../../Utilities/Product/data';
-import { ProductCertificate } from '../../../Utilities/Product/data';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
-//--------------------------Install-----------------------------//
-//npm install --save styled-components
-//npm install react-slick --save
-//npm install slick-carousel --save
-//-----------------------CSS COMPONENT--------------------------//
-
+import Certi from './ProductCerti';
+import ProductData from './data';
 
 
 const Container = styled.div`
   background-color: #61615e;
-  width: 100%;
-  height: 80vh;
-  margin: -50px;
+  max-width: 100%;
+  height: 120vh;
 `;
 const PageTitle = styled.div`
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 3rem;
   padding: 5px 25px;
+  user-select: none;
 `;
 
 const TitleInvert = styled.span`
@@ -40,7 +34,7 @@ const TitleInvert = styled.span`
 const TitleWrapper = styled.span`
   font-size: 55px;
   color: white;
-  font-weight: 600
+  font-weight: 600;
 `
 const Card = styled.div`
     border: 2px solid white;
@@ -66,7 +60,7 @@ const HeaderName = styled.h4`
   font-weight: 300;
 `;
 const HeaderPrice = styled.div`
-
+color: #AED96D;
 `;
 const SlideContainer = styled.div`
 padding: 20px;
@@ -82,7 +76,7 @@ const SliderImage = styled.img`
   width: 100%;
   height: 200px;
   object-fit: contain;
-  background: black;
+  background: white;
 `;
 const ProductFlavor = styled.div`
   font-size: 15px;
@@ -127,38 +121,7 @@ const CartButton = styled.button`
     color: black;
     };
 `;
-
-const CertificateContainer = styled.div`
-  padding: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-`;
-const CertiLogo = styled.img`
-  max-width: 40px;
-  max-height: 40px;
-`;
-const CertiBox = styled.div`
-  margin: 15px 5px 0px 10px;
-  padding: 5px;
-  display: flex;
-  flex-direction: row;
-  max-width: 700px;
-  height: 90px;
-  border: 2px solid white;
-  box-shadow: 5px 5px 8px black;
-  flex: 1 0 41%;
-`;
-const CertiContent = styled.div`
-  margin-left:5px;
-`;
-const CerTitle = styled.div`
-  font-size: 20px;
-  font-weight: 500;
-`;
-const CertiDesc = styled.div`
-  font-size: 16px;
-`;
+const Certificate = styled.div``;
 
 //-------------------------------------------------------------------------//
 
@@ -167,7 +130,7 @@ const Products = () => {
     accessibility: false,
     dots: false,
     infinite: true,
-    speed: 500,
+    speed: 700,
     lazyLoad: false,
     autoplay: true,
     slidesToShow: 3,
@@ -201,6 +164,7 @@ const Products = () => {
     ],
   };
 
+
   return (
     <Container>
       <PageTitle>
@@ -233,17 +197,9 @@ const Products = () => {
           ))}
         </Slider>
       </SlideContainer>
-      <CertificateContainer>
-        {ProductCertificate.map((item) => (
-          <CertiBox item={item} key={item.id}>
-            <CertiLogo src={item.cerIMG} />
-            <CertiContent>
-              <CerTitle>{item.cerTitle}</CerTitle>
-              <CertiDesc>{item.text}</CertiDesc>
-            </CertiContent>
-          </CertiBox>
-        ))}
-      </CertificateContainer>
+      <Certificate>
+        <Certi />
+      </Certificate>
 
     </Container>
   )
