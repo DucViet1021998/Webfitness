@@ -10,6 +10,9 @@ import Plan from '../../../pages/home/Plan';
 import Testimonials from '../../../pages/home/Testimonaials';
 import Footer from '../Footer';
 import Products from '../../../pages/home/Productcs';
+import HomeStore from '../../../pages/home/Store';
+
+
 
 
 const cx = classNames.bind(styles)
@@ -36,6 +39,7 @@ function HomePageLayout({ children }) {
             <Products id="Programs" />
             <Testimonials />
             <Footer />
+            {/* <HomeStore /> */}
         </>
     )
 }

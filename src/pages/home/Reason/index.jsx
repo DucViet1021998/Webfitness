@@ -8,7 +8,7 @@ import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 const cx = classNames.bind(styles)
 
 function Reason() {
-    return <div className={cx("container")}>
+    return <div id='reasons' className={cx("container")}>
         <div className={cx("left-r")}>
             <img src="https://s3-alpha-sig.figma.com/img/8cdb/b6e8/d70117df73f9933ee8e16d1661cded19?Expires=1671408000&Signature=BN-drr4g0cTMHBwOg7x8F7cbWzqZMCVfcpV1mHWyIWclUoj0UXLCVzLTlBJeI5NbkuvU~fWkwymsyQ023sbfcanPwatFDa3FlavQvePQbn2goJP60A-yQn4YxO0rgqrHzVlvDG-ngsX-AJxL6iYblNGVvDZoHVhsNKNJXhSUjvwQ5WUOa6oqwYu2Sxb-dt92YBmJ02VM901quOLh07x0HSVdhHz55vQDbyW-u5aYzXo3hmWSRxft4hPWpmAsd604dtXZruw~wScTTdYd8I5HmSiefHKrvGIqm6WOs4~lP-DNB1vQlJ7XsfXBjyoL6aX-P24EVHLaRLNqGb9Yxr379g__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="anh 1" />
             <img src="https://s3-alpha-sig.figma.com/img/6ae1/f984/7fb361c97fae6f20f0b6384b22786baa?Expires=1671408000&Signature=LPyvEqPb8y6IvlWs9DwexQkvpwl23DMIw7OSEMCUv1LrK9-Gv2r~9Nn7Bx0LpnuauJJm8~HtrF7mASkKmfbKEVIp5o7HAQocFMAkT62KkbnLTyZxUpDN-5FYQBjNXvJNUfiEOEisE9nPYA0UQ5yhfBCciwSdZW-di-7PEW8O4oqtyx9PrrDSkUcHtnMmJzHJDwx4wJ5CPcus4GQuY2Lvjg7DP3TZuIOBuIeuLFnJa8gjc6iFo9bMtTnxCGXJwbaBq0H2A3oKUYTImTdnZhaO7GQMNGGHNi7bxZqJD~UtEDfVwau0clHJXCTVPYnirSdmDR~1geNDK~-ts4lPbfpHog__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="anh 2" />

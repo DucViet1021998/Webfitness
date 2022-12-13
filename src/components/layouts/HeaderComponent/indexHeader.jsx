@@ -4,6 +4,8 @@ import classNames from 'classnames/bind';
 import styles from './Header.module.scss'
 import Button from '../../Button';
 
+import { Link } from 'react-scroll';
+
 
 
 const cx = classNames.bind(styles)
@@ -18,12 +20,20 @@ function Header() {
             <ul className={cx('narBar')}>
                 <li className={cx('item')}><Button
                     to='/' text>Home</Button></li>
-                <li className={cx('item')}><Button
-                    text
-                >Programs</Button></li>
-                <li className={cx('item')}><Button text>Why Us</Button></li>
-                <li className={cx('item')}><Button text>Products</Button></li>
+                <li className={cx('item')}>
+                    <Button text>
+                        <Link to="programs" spy={true} smooth={true} offset={0} duration={500}>
+                            Programs</Link></Button></li>
+                <li className={cx('item')}>
+                    <Button text>
+                        <Link to="reasons" spy={true} smooth={true} offset={-70} duration={500}>
+                            Why Us</Link></Button></li>
+                <li className={cx('item')}>
+                    <Button text>
+                        <Link to="products1" spy={true} smooth={true} offset={0} duration={500}>
+                            Products</Link></Button></li>
             </ul>
+
         </div>
 
     )

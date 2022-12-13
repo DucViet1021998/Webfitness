@@ -166,7 +166,7 @@ const Products = () => {
   };
 
 
-  return (
+  return (<div id='products1'>
     <Container>
       <PageTitle>
         <TitleInvert>BULK UP</TitleInvert>
@@ -203,6 +203,7 @@ const Products = () => {
       </Certificate>
 
     </Container>
+  </div>
   )
 }
 
