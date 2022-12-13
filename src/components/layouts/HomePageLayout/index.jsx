@@ -33,7 +33,7 @@ function HomePageLayout({ children }) {
             <Programs className={cx('programs')} />
             <Reason />
             <Plan />
-            <Products />
+            <Products id="Programs" />
             <Testimonials />
             <Footer />
         </>

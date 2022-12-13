@@ -29,14 +29,14 @@ const publicRoutes = [
         component: HomeLoggedIn,
         width: "382px",
         height: "652px",
-        img: 'https://s3-alpha-sig.figma.com/img/e2da/22d0/9d66213bfd99e2da1e2314adcc038411?Expires=1670803200&Signature=RM7Sb3TzD5TyBpkLaNqTei4wiVXC-9HnYU4DBx4BUJJP9KKf0jr~vZJwpR4tJJTQZ6dJx41UQckJVj7O1UuZulikoHDfGhFzwm9vOyJfYULp7nGb-JBmkuaJYhs4YfleQ5xRKAO5aFkXYUbmeL0ThiKbTkO0S80oaPzmDUsHX7nVg-ET6Ag2HI03zKUn07mPWMO18aLbsK~gxGWukzDl-JVSkGRd3jd5rXcciWEEMp-HKrvJrzmLDgom1NDw0Ehbih7RGpF1gHL4NHl7dFBs1JVrO1R5xUMFUlgO2RalCiBTAUEhoWIQHdtZS~FM9BDwEWtYIy1BkpE35RVWA4y9XQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA'
+        img: 'https://s3-alpha-sig.figma.com/img/e2da/22d0/9d66213bfd99e2da1e2314adcc038411?Expires=1672012800&Signature=fP2m3bT-JtMI5DppDqJDQCQPcw~cw8X7hEm8BJ47uqTlsfyiEKRyA3n1o8DicUbVSIziAFQWUF0B6yshB0LwlwXzIABT8O7WbHF-tEtfEKSuLppvvBr1Wb3trXds2pNEdDbGFDnaaeDv5ofPUynRymwFC17yP9NM~8i5H8TgzwUJdniX0EAM3WFbYJXOMp4RdD7uOjYdYRgLAk-FuvtZPP03B6ktItPBTdmLxg1E60lIGiutBE~o-eiep9tnxfhAoh6aQB6IK3gItjgwAtxD6oJRR2YOQfwEKJuDQeQibkalaF3sDQ5SPAsZ3CjiSQC4fFsIihf3~g-we4UkqWu1UA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4',
     },
     {
         path: '/schedule',
         component: Schedule,
         width: "408px",
         height: "612px",
-        img: 'https://s3-alpha-sig.figma.com/img/3a90/932c/fd6d5b0c0a3d6cb8ab2448b8a6fcc85b?Expires=1670803200&Signature=AqgwQogct4G9eH3kvpUUAqI~3bOWtu3ngR4UpvUZDXST6tXQ05UHp1~~AuphZ-NaANOLHz9t6xnYT0a-GeeRYEHXI2KU2FS1SaJkUI9v3UM0yLlylBq5ToBscWrHd~TYLQfT8356RkLBfTr1N74lAc9oYVY0slNLEyi42Su3h8JISJ~Saj8GNz2OqRON0SLrwCC-ogy1iY6EY4rzrOwYU6-Dfe2S0bB3hqvdafP2L-IakdZPaoe8pmDiiAAWoKg4qasB0NS3NmX5M7MlxxGYTp9GOS6TCMUa5w2SKaS2eH43~ObAMD2vTcVZluaSAKNtp~ZF58GXvsh7w4SQ2DZtew__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA',
+        img: 'https://s3-alpha-sig.figma.com/img/3a90/932c/fd6d5b0c0a3d6cb8ab2448b8a6fcc85b?Expires=1672012800&Signature=H0~OCzG4PgVCkQZdDqxyOQ0Q0Ij93cQBTTREMlB8fQ8K3zOdBwlrH5DKqSegwmZa6-mtx2XFjdElMd6FLDbpdDMePilQlkiaBwZghpekUtDKn21xXGOcK0W-I1xHVALDc-n3EYGLJB6~e-PSmh546cQn-E9LDmTwFL81xOg2D6PI6mPZYpZBac3nCGpKzcFaEGVvvyzOiAf1NUgG8FMOLJEeWFATmqbNIGAsCkAVFIEmyqHSPCvhCZaaXmCqtMSISyoeKBgg3Wv8hmo3FU6YSCpnFdSHMjKxPG5hEU9bf~ajTlC20WVG4GaBE9OcFjCJhTtdUmav92YiMZwZuv~n~Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4',
     },
 
 ]

@@ -2,11 +2,12 @@ import styled from "styled-components";
 //chinh 2 thang duoi nay de resize cai lich
 export const PageContainer = styled.div`
     width: 75%;
-    height: 70vh;
+    min-height: 80vh;
 `;
 export const Wrapper = styled.div`
   border: 2px solid #AED96D;
   margin-left: 2rem;
+  min-width:680px;
 `;
 
 export const StyledEvent = styled.span`
@@ -76,12 +77,13 @@ export const DateTitle = styled.span`
   font-size: 1.35rem;
   font-weight: 550;
   text-shadow: 1px 1px darkgray;
+  max-width: 100px;
 `;
 
 export const DateControls = styled.div`
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   padding: 10px 0;
   align-items: center;
 
@@ -102,7 +104,7 @@ export const PortalWrapper = styled.div`
   background: white;
   position: absolute;
   width: 60%;
-  height: 100px;
+  height: 160px;
   top: 50%;
   left: 50%;
   /* border: 1px solid; */
@@ -110,6 +112,7 @@ export const PortalWrapper = styled.div`
   transform: translate(-50%, -50%);
   box-shadow: 10px 10px 20px black;
   padding: 25px;
+  z-index: 99;
 
   h2 {
     font-size: 1.1rem;
@@ -198,9 +201,14 @@ justify-content: space-around;
 align-items: center;
 `;
 export const DetailIcon = styled.div`
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  width: 30px;
-  height: 30px;
+  border: none;
+  width: 40px;
+  height: 40px;
   &:hover {
     color: #AED96D}
 `;

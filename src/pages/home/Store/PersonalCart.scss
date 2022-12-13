@@ -1,0 +1,98 @@
+.person-cart-container{
+    width: 70%;
+    height: 70%;
+    .page-title{
+        font-size: 2.1em;
+        font-weight: bold;
+        -webkit-text-stroke: 1px white;
+        -webkit-text-fill-color:transparent;
+        letter-spacing: 1px;
+    }
+    .content-wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        .product-count{
+            flex: 1;
+            height: 30px;
+            font-size: large;
+            font-weight: 550;
+            border: 1px solid #AED96D;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: whitesmoke;
+        }
+        .product-container{
+            flex: 2;
+            height: 90%;
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            border: 1px solid #AED96D;
+            color: whitesmoke;
+            font-weight: 500;
+            font-size:20px;
+            box-shadow: 0 0 3px #AED96D;
+        }
+        .payment-container{
+            flex: 2;
+            height: 60%;
+            margin: 0px 10px 0px 10px;
+            color: whitesmoke;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            font-weight: 500;
+            font-size:10px;
+            .payment-total{
+                width: 80%;
+                margin-bottom: 20px;
+                font-weight: 700;
+                font-size: 20px;
+                border: 1px solid #AED96D;
+                box-shadow: 0 0 3px #AED96D;
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+            }
+            .payment-method{
+                width: 80%;
+                height: 250px;
+                margin-bottom: 20px;
+                font-weight: 500;
+                font-size:20px;
+                border: 1px solid #AED96D;
+                box-shadow: 0 0 3px #AED96D;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                flex-direction: column;
+                .payment-box{
+                    margin-top: 30px;
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: center;
+                    flex-direction: column;
+                }
+            }
+            .payment-confirm{
+                padding: 5px 15px;
+                border: 1px solid #AED96D;
+                color: white;
+                background-color: #61615e;
+                cursor: pointer;
+                font-weight: 500;
+                font-size: 1rem;
+                box-shadow: 0 0 3px #AED96D;
+                &:hover {
+                  background-color: #AED96D;
+                  color: black}
+            }
+        }
+    }
+}

@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     min-width: 150px;
+    min-height: 40px;
     font-size: 16px;
     font-weight: 700;
     padding: 8px 16px;
@@ -10,10 +11,6 @@
     background-color: var(--white);
     border: 2px solid transparent;
     user-select: none;
-
-    +.wrapper {
-        margin-left: 8px;
-    }
 
     &.disable {
         pointer-events: none;
@@ -69,8 +66,12 @@
 }
 
 .text {
+    background-color: transparent;
+    color: var(--white);
+
     &:hover {
         text-decoration: underline;
+        cursor: pointer;
     }
 }
 

@@ -35,7 +35,6 @@ const data = [
 function Programs() {
     return (
         <div className={cx("programs")}>
-
             {/* HEADER */}
             <div className={cx('header')}>
                 <span className='stroke-text'>explore</span>

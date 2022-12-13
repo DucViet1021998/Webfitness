@@ -10,7 +10,8 @@ import ProductData from './data';
 const Container = styled.div`
   background-color: #61615e;
   max-width: 100%;
-  height: 120vh;
+  min-height: 800px;
+  padding: 20px 0px 30px 20px;
 `;
 const PageTitle = styled.div`
   width: 100%;
@@ -25,14 +26,14 @@ const PageTitle = styled.div`
 `;
 
 const TitleInvert = styled.span`
-  font-size: 55px;
+  font-size: 3rem;
   font-weight: bold;
   -webkit-text-stroke: 1px white;
   -webkit-text-fill-color:transparent;
 `;
 
 const TitleWrapper = styled.span`
-  font-size: 55px;
+  font-size: 3rem;
   color: white;
   font-weight: 600;
 `

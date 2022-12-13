@@ -6,7 +6,7 @@ import styles from './Button.module.scss'
 
 const cx = classNames.bind(styles)
 
-function Button({
+function ButtonC({
     to,
     href,
     onClick,
@@ -64,4 +64,4 @@ function Button({
 }
 
 
-export default Button;
+export default ButtonC;
